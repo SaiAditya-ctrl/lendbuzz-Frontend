@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const API_URL = 'http://localhost:6006/api/movies';
+        const API_URL = 'http://localhost:6010/api/movies';
         const response = await axios.get(API_URL);
         const data = response.data;
         console.log("dd", data);
@@ -25,7 +25,7 @@ function App() {
 
   const handleToggleFavorite = (movie) => {
    
-    const API_URL = `http://localhost:6006/api/movies/+${movie.id}`;
+    const API_URL = `http://localhost:6010/api/movies/+${movie.id}`;
     axios.put(API_URL).then((res)=>{
       setMovies(res.data)
     })
@@ -51,7 +51,7 @@ function App() {
         </Router>:
         <Router>
                    <Routes>
-         <Route exact path="/error"
+         <Route exact path="/"
           
           element= {<Errorhandler  />
  }>
