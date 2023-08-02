@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; 
+    color: #fff; 
+  }
+  
+  h1 {
+    padding: 20px;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-card {
+    background-color: #1f1f1f; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .movie-card:hover {
+   
+    transform: scale(1.1);
+  }
+  .movie-card-content {
+    position: relative; 
+  }
+  
+ 
+  .movie-title {
+    font-weight: bold;
+    margin: 16px 8px 0;
+  }
+  
+  .movie-release-date {
+    font-size: 14px;
+    color: #ccc; 
+    margin-bottom: 12px;
+  }
+  
+  .movie-poster {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0
+  }  
+  .favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .favorite-icon.active {
+    color: blue;
+  }
+ 
+.favorite-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .favorite-icon.liked {
+    color: red;
+  }
+
+ 
+.favorites-button {
+    background-color: red; 
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+.favorites-button {
+    background-color: red; 
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f; 
+  }
+  
+  .nav-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+  }
+  
+  .search-bar {
+    position: relative;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-bar input[type="text"]::placeholder {
+    color: #ccc;
+  }
+  
+  .search-bar .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .movie-container {
+      justify-content: flex-start;
+    }
+    .movie-card {
+      width: 100%;
+      margin: 10px;
+    }
+  
+    .nav-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-header a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .search-bar {
+      margin: 10px 0;
+    }
+  
+    .search-bar input[type="text"] {
+      width: 100%;
+    }
+  }
+  
+ 
+ @media (max-width: 768px) {
+    .movie-container {
+      justify-content: flex-start;
+    }
+    .movie-card {
+      width: 100%;
+      margin: 10px;
+    }
+  } 
+  
+  
+  

@@ -1,0 +1,23 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star-icon {
+    font-size: 18px;
+  }
+  
+  .star-icon.filled {
+    color: gold; 
+  }
+  
+  .star-icon.half {
+    color: gold; 
+    position: relative;
+    top: -2px;
+  }
+  
+  .star-icon.empty {
+    color: #ccc; 
+  }
+  
