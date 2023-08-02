@@ -24,6 +24,3 @@ I introduced a star rating feature using the voting_average field in the movie o
 
 ## Step 9:
 I implemented a modal component (MovieModal.js) that appears when a user clicks on a movie image. The modal displays the title, description, and a close button for the user to close the modal.
-
-
-![image](https://github.com/SaiAditya-ctrl/lendbuzz/assets/56829774/802b10bd-629a-437e-b026-ce87823c2604)
