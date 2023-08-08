@@ -1,6 +1,6 @@
 import React from 'react';
 import './Errorhandler.css'; // Import your CSS file
-import img from "../../../src/images/error.png"
+import img from "../../../src/images/source.gif"
 function Errorhandler() {
   return (
     <div className="error-container">
