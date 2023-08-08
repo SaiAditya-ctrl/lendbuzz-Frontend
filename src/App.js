@@ -9,7 +9,7 @@ import Errorhandler from "./components/ErrorHandler/Errorhandler";
 function App() {
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]);
-  const baseUrl = "http://localhost:6010/api"
+  const baseUrl = "http://localhost:6011/api"
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -18,6 +18,7 @@ function App() {
         const data = response.data;
         console.log("dd", data);
         setMovies(data);
+        navigate("/");
       } catch (error) {
         console.error("Error fetching data:", error);
         navigate("/error");

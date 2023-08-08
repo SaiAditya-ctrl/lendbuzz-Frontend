@@ -1,11 +1,11 @@
 import React from 'react';
-import './Errorhandler.css'; // Import your CSS file
+import './Errorhandler.css'; 
 import img from "../../../src/images/source.gif"
 function Errorhandler() {
   return (
     <div className="error-container">
       <img
-        src={img}// Replace with your image path
+        src={img}
         alt="Error"
         className="error-image"
       />
