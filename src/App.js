@@ -9,7 +9,7 @@ import Errorhandler from "./components/ErrorHandler/Errorhandler";
 function App() {
   const navigate = useNavigate();
   const [movies, setMovies] = useState([]);
-  const baseUrl = "http://localhost:6011/api"
+  const baseUrl = "http://localhost:6010/api"
   useEffect(() => {
     const fetchMovies = async () => {
       try {
